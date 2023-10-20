@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  stations-service:
+    build:
+      context: .
+      dockerfile: StationsService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8081:80
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+  stations-database:
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5433:5432
+    volumes: 
+      - .volumes/stations-database:/var/lib/postgresql/data
+
+  train-tracking-service:
+    build:
+      context: .
+      dockerfile: TrainTrackingService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8082:80
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

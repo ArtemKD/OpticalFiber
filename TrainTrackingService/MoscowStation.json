@@ -1,0 +1,11 @@
+{
+	"id": "9f1b8001-1dcb-4877-88b6-aa8c624146eb",
+	"title": "Москва (Ленинградский вокзал)",
+	"direction": "Ленинградское",
+	"stationType": "train_station",
+	"transportType": "train",
+	"longitude": 37.654377,
+	"latitude": 55.778353,
+	"esrCode": "060073",
+	"yandexCode": "s2006004"
+}

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  stations-service:
+    image: ${DOCKER_REGISTRY-}stations-service
+
+  stations-database:
+    image: postgis/postgis:15-master
+
+  train-tracking-service:
+    image: ${DOCKER_REGISTRY-}train-tracking-service
