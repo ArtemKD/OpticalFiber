@@ -5,8 +5,6 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C9CD16F6-8CA5-4D40-A351-E5D10FD875CA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{D1A4B756-CA90-490A-817B-AF8267CF975C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StationsService", "StationsService\StationsService.csproj", "{6BBC9D87-5B8A-4404-BBF2-AF9DB0B11590}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainTrackingService", "TrainTrackingService\TrainTrackingService.csproj", "{262448D2-9533-48C8-90FB-1EE0F647C2C9}"

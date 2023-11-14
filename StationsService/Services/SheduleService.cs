@@ -32,6 +32,10 @@ namespace StationsService.Services
 					return null;
 
 				var stops = new List<StationStop>();
+
+				if (threadInfo.Stops == null)
+					return null;
+
 				foreach (var stop in threadInfo.Stops)
 				{
 					var stationPoint = await _stationRepository.GetStationByCodeAsync(stop.Station.Code);
